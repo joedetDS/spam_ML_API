@@ -35,6 +35,7 @@ def spam_detection(input_parameters: ModelInput):
     
     #Check if mail is spam or non-spam
     if prediction[0]==0:
-        return "Non-Spam"
+        result = "Non-Spam"
     else:
-        return "Spam"
+        result = "Spam"
+    return result
