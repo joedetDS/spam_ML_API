@@ -38,4 +38,4 @@ def spam_detection(input_parameters: ModelInput):
         result = "Non-Spam"
     else:
         result = "Spam"
-    return result
+    return result.strip('"')
